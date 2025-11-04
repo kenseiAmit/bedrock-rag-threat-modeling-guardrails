@@ -1,0 +1,152 @@
+[
+ {
+  "Key": "northstar-knowledge-base/csv/aws_infrastructure_inventory.csv",
+  "Size": 2995,
+  "ETag": "\"bf5812f1ef19b39cec8dab78f3ea8a40\""
+ },
+ {
+  "Key": "northstar-knowledge-base/csv/customer_accounts.csv",
+  "Size": 2412,
+  "ETag": "\"2578658762c11e18f82704ed56507d63\""
+ },
+ {
+  "Key": "northstar-knowledge-base/csv/employee_directory.csv",
+  "Size": 2804,
+  "ETag": "\"d00d49058bcb4e2610973b0b0f9271fc\""
+ },
+ {
+  "Key": "northstar-knowledge-base/csv/sales_pipeline.csv",
+  "Size": 3215,
+  "ETag": "\"567293f0d8cae4fb69624be239aaf226\""
+ },
+ {
+  "Key": "northstar-knowledge-base/csv/support_tickets.csv",
+  "Size": 3031,
+  "ETag": "\"7978c94d8519e27d2679a51637400478\""
+ },
+ {
+  "Key": "northstar-knowledge-base/docx/disaster_recovery_plan.docx",
+  "Size": 16671,
+  "ETag": "\"9d4b88e1d8d2bd30e2cd2528bbe6f626\""
+ },
+ {
+  "Key": "northstar-knowledge-base/docx/product_requirements_document.docx",
+  "Size": 17511,
+  "ETag": "\"63a14cfaf27e6c7fd596734b0dc3b41c\""
+ },
+ {
+  "Key": "northstar-knowledge-base/docx/quarterly_business_review.docx",
+  "Size": 17865,
+  "ETag": "\"dc871d2d7e8674d104b6967bf4559257\""
+ },
+ {
+  "Key": "northstar-knowledge-base/docx/security_policy.docx",
+  "Size": 16218,
+  "ETag": "\"f3aff10379b77d1b82091ce14d5dd719\""
+ },
+ {
+  "Key": "northstar-knowledge-base/docx/sow_template.docx",
+  "Size": 16024,
+  "ETag": "\"5dbefd03e73f14afe581dc6d047db18e\""
+ },
+ {
+  "Key": "northstar-knowledge-base/html/api_authentication_guide.html",
+  "Size": 9994,
+  "ETag": "\"b23b20c307598c3baf300063630b2384\""
+ },
+ {
+  "Key": "northstar-knowledge-base/html/aws_architecture_documentation.html",
+  "Size": 20990,
+  "ETag": "\"0dd43cb8dbeab03ed07daa505682583f\""
+ },
+ {
+  "Key": "northstar-knowledge-base/html/company_policies_handbook.html",
+  "Size": 18435,
+  "ETag": "\"f954e1c90c23dd386b477b806a117bcc\""
+ },
+ {
+  "Key": "northstar-knowledge-base/html/product_features_overview.html",
+  "Size": 12573,
+  "ETag": "\"cb87d0970aeed26eb60681d39513a9d0\""
+ },
+ {
+  "Key": "northstar-knowledge-base/html/troubleshooting_guide.html",
+  "Size": 16875,
+  "ETag": "\"9ce6e3366d67b7a4c9c8330bdec5bce7\""
+ },
+ {
+  "Key": "northstar-knowledge-base/pdf/api_best_practices.pdf",
+  "Size": 46425,
+  "ETag": "\"b5d550469053a5ab4d5bb003782a5182\""
+ },
+ {
+  "Key": "northstar-knowledge-base/pdf/compliance_overview.pdf",
+  "Size": 46065,
+  "ETag": "\"72f8d57147867169554152bf8a09c310\""
+ },
+ {
+  "Key": "northstar-knowledge-base/pdf/customer_success_playbook.pdf",
+  "Size": 46854,
+  "ETag": "\"4a6f37826495f3e2001b926eaed2f095\""
+ },
+ {
+  "Key": "northstar-knowledge-base/pdf/data_governance_policy.pdf",
+  "Size": 46791,
+  "ETag": "\"5a54f382e01f6e945f8e8891fc911b26\""
+ },
+ {
+  "Key": "northstar-knowledge-base/pdf/service_level_agreement.pdf",
+  "Size": 45741,
+  "ETag": "\"0408e9ab011cfd24b14308f7406b89fb\""
+ },
+ {
+  "Key": "northstar-knowledge-base/txt/company_announcement_q3_kickoff.txt",
+  "Size": 6746,
+  "ETag": "\"81c4192c353db92af56f21ced80c3a23\""
+ },
+ {
+  "Key": "northstar-knowledge-base/txt/engineering_team_meeting_notes_2023_06_15.txt",
+  "Size": 3540,
+  "ETag": "\"c4c0447078529d5fbfd0433123de3e48\""
+ },
+ {
+  "Key": "northstar-knowledge-base/txt/incident_report_2023_06_03.txt",
+  "Size": 6458,
+  "ETag": "\"b81d8886679d105c070c90c3c6eee97e\""
+ },
+ {
+  "Key": "northstar-knowledge-base/txt/onboarding_checklist_engineering.txt",
+  "Size": 6743,
+  "ETag": "\"90cb629de37d4147e37bc5fa41e3ee72\""
+ },
+ {
+  "Key": "northstar-knowledge-base/txt/release_notes_v2.5.0.txt",
+  "Size": 5644,
+  "ETag": "\"5a050f04d99831aedb06cea1dfdfaddc\""
+ },
+ {
+  "Key": "northstar-knowledge-base/xlsx/budget_tracking_q3_2023.xlsx",
+  "Size": 6454,
+  "ETag": "\"cdd52da26af0c4a55fe6f093db988f72\""
+ },
+ {
+  "Key": "northstar-knowledge-base/xlsx/employee_training_records.xlsx",
+  "Size": 6660,
+  "ETag": "\"f88775a36d36e0b059b55ccda6bbd01b\""
+ },
+ {
+  "Key": "northstar-knowledge-base/xlsx/okr_tracking_q3_2023.xlsx",
+  "Size": 6442,
+  "ETag": "\"6a2455c34fa3b6b5475fd889b1b2063a\""
+ },
+ {
+  "Key": "northstar-knowledge-base/xlsx/project_timeline_q3_2023.xlsx",
+  "Size": 5972,
+  "ETag": "\"54fe14708d395c7351f0a65b6c3be4eb\""
+ },
+ {
+  "Key": "northstar-knowledge-base/xlsx/vendor_management.xlsx",
+  "Size": 6460,
+  "ETag": "\"b262e2a6ba1bf70bc23c100fe7761ee7\""
+ }
+]
