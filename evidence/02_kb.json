@@ -1,0 +1,17 @@
+{
+ "knowledgeBaseId": "U89FCYIR8I",
+ "name": "northstar-assist-kb",
+ "knowledgeBaseArn": "arn:aws:bedrock:us-east-1:269629487409:knowledge-base/U89FCYIR8I",
+ "description": "Northstar Assist managed knowledge base",
+ "roleArn": "arn:aws:iam::269629487409:role/NorthstarAssistKBServiceRole",
+ "knowledgeBaseConfiguration": {
+  "type": "MANAGED",
+  "managedKnowledgeBaseConfiguration": {
+   "embeddingModelType": "CUSTOM",
+   "embeddingModelArn": "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-embed-text-v2:0"
+  }
+ },
+ "status": "ACTIVE",
+ "createdAt": "2026-10-18 12:58:18.329761+00:00",
+ "updatedAt": "2026-10-18 12:58:18.329761+00:00"
+}

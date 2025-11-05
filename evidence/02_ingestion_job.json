@@ -1,0 +1,19 @@
+{
+ "knowledgeBaseId": "U89FCYIR8I",
+ "dataSourceId": "QAULFCYEWN",
+ "ingestionJobId": "IJRO7K131N",
+ "status": "COMPLETE",
+ "statistics": {
+  "numberOfDocumentsScanned": 30,
+  "numberOfMetadataDocumentsScanned": 0,
+  "numberOfNewDocumentsIndexed": 30,
+  "numberOfModifiedDocumentsIndexed": 0,
+  "numberOfMetadataDocumentsModified": 0,
+  "numberOfDocumentsDeleted": 0,
+  "numberOfDocumentsFailed": 0,
+  "numberOfDocumentsSkipped": 0
+ },
+ "startedAt": "2026-10-18 12:59:06.985544+00:00",
+ "updatedAt": "2026-10-18 13:03:10.479352+00:00",
+ "textReadyAt": "2026-10-18 13:01:19.539000+00:00"
+}

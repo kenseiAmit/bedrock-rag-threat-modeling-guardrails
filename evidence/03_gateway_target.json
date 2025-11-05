@@ -1,0 +1,46 @@
+{
+ "ResponseMetadata": {
+  "RequestId": "0dc4abd6-4fab-4300-ae0a-ee5c1b4ba111",
+  "HTTPStatusCode": 200,
+  "HTTPHeaders": {
+   "date": "Sun, 18 Oct 2026 13:05:15 GMT",
+   "content-type": "application/json",
+   "content-length": "713",
+   "connection": "keep-alive",
+   "x-amzn-requestid": "0dc4abd6-4fab-4300-ae0a-ee5c1b4ba111",
+   "x-amz-apigw-id": "FcOR7E5VIAMECig=",
+   "x-amzn-trace-id": "Root=1-6ad4c40b-6cc77e820d0e6c4768fee84c"
+  },
+  "RetryAttempts": 0
+ },
+ "gatewayArn": "arn:aws:bedrock-agentcore:us-east-1:269629487409:gateway/northstar-assist-gateway-0x39hcbuob",
+ "targetId": "3ESMLF0W4X",
+ "createdAt": "2026-10-18 13:05:07.263607+00:00",
+ "updatedAt": "2026-10-18 13:05:08.489552+00:00",
+ "status": "READY",
+ "name": "northstar-kb",
+ "description": "Search Northstar Technologies internal documents (policies, procedures, reports, spreadsheets) and return relevant passages with source documents.",
+ "targetConfiguration": {
+  "mcp": {
+   "connector": {
+    "source": {
+     "connectorId": "bedrock-knowledge-bases",
+     "version": "1.0.0"
+    },
+    "configurations": [
+     {
+      "name": "Retrieve",
+      "parameterValues": {
+       "knowledgeBaseId": "U89FCYIR8I"
+      }
+     }
+    ]
+   }
+  }
+ },
+ "credentialProviderConfigurations": [
+  {
+   "credentialProviderType": "GATEWAY_IAM_ROLE"
+  }
+ ]
+}
