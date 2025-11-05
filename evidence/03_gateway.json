@@ -1,0 +1,30 @@
+{
+ "ResponseMetadata": {
+  "RequestId": "560c097f-6b3e-4569-a6e5-617ff2f6c11f",
+  "HTTPStatusCode": 200,
+  "HTTPHeaders": {
+   "date": "Sun, 18 Oct 2026 13:05:06 GMT",
+   "content-type": "application/json",
+   "content-length": "799",
+   "connection": "keep-alive",
+   "x-amzn-requestid": "560c097f-6b3e-4569-a6e5-617ff2f6c11f",
+   "x-amz-apigw-id": "FcOQiFFzoAMEJZA=",
+   "x-amzn-trace-id": "Root=1-6ad4c402-5fd80d564d1435c47d094e0a"
+  },
+  "RetryAttempts": 0
+ },
+ "gatewayArn": "arn:aws:bedrock-agentcore:us-east-1:269629487409:gateway/northstar-assist-gateway-0x39hcbuob",
+ "gatewayId": "northstar-assist-gateway-0x39hcbuob",
+ "gatewayUrl": "https://northstar-assist-gateway-0x39hcbuob.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp",
+ "createdAt": "2026-10-18 13:04:58.546514+00:00",
+ "updatedAt": "2026-10-18 13:04:59.194470+00:00",
+ "status": "READY",
+ "name": "northstar-assist-gateway",
+ "description": "Exposes the Northstar managed knowledge base to the harness",
+ "roleArn": "arn:aws:iam::269629487409:role/NorthstarGatewayServiceRole",
+ "protocolType": "MCP",
+ "authorizerType": "AWS_IAM",
+ "workloadIdentityDetails": {
+  "workloadIdentityArn": "arn:aws:bedrock-agentcore:us-east-1:269629487409:workload-identity-directory/default/workload-identity/northstar-assist-gateway-0x39hcbuob"
+ }
+}
