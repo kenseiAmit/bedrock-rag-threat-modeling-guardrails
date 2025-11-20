@@ -1,0 +1,24 @@
+{
+ "ResponseMetadata": {
+  "RequestId": "10e9f5c4-0b25-4743-aaee-60a1f681cebb",
+  "HTTPStatusCode": 200,
+  "HTTPHeaders": {
+   "date": "Sun, 18 Oct 2026 13:14:08 GMT",
+   "content-type": "application/json",
+   "content-length": "380",
+   "connection": "keep-alive",
+   "x-amzn-requestid": "10e9f5c4-0b25-4743-aaee-60a1f681cebb"
+  },
+  "RetryAttempts": 0
+ },
+ "loggingConfig": {
+  "cloudWatchConfig": {
+   "logGroupName": "/northstar-assist/bedrock-invocations",
+   "roleArn": "arn:aws:iam::269629487409:role/NorthstarBedrockLoggingRole"
+  },
+  "textDataDeliveryEnabled": true,
+  "imageDataDeliveryEnabled": false,
+  "embeddingDataDeliveryEnabled": false,
+  "videoDataDeliveryEnabled": true
+ }
+}
