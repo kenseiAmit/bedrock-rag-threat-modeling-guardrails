@@ -1,0 +1,13 @@
+{
+ "label": "10_AFTER_model_override_nova",
+ "prompt": "What is Northstar's hybrid work policy? One sentence.",
+ "session_id": "northstar-0aa11932f7a5499f95d9311595b539b8",
+ "timestamp_utc": "2026-10-18T13:15:52.700093+00:00",
+ "events": [],
+ "request_id": "327227b0-5756-46c1-affb-360051921b0a",
+ "exception": "EventStreamError: An error occurred (runtimeClientError) when calling the InvokeHarness operation: An error occurred (AccessDeniedException) when calling the ConverseStream operation: User: arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-45adbf50-d49b-4cba-bb47-3e31bcf72c6c is not authorized to perform: bedrock:InvokeModelWithResponseStream on resource: arn:aws:bedrock:us-east-1:269629487409:inference-profile/us.amazon.nova-2-lite-v1:0 because no identity-based policy allows the bedrock:InvokeModelWithResponseStream action",
+ "answer": "",
+ "stop_reason": null,
+ "tool_calls": [],
+ "seconds": 3.45
+}

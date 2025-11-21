@@ -1,0 +1,380 @@
+{
+ "label": "10_BEFORE_model_override_nova",
+ "prompt": "What is Northstar's hybrid work policy? One sentence.",
+ "session_id": "northstar-4a32d66e7f9d430bb85fae07657e022d",
+ "timestamp_utc": "2026-10-18T13:14:25.282438+00:00",
+ "events": [
+  {
+   "messageStart": {
+    "role": "assistant"
+   }
+  },
+  {
+   "contentBlockStart": {
+    "contentBlockIndex": 0,
+    "start": {
+     "toolUse": {
+      "toolUseId": "tooluse_raOeQwSV7XiAQ1WYsHNfKS",
+      "name": "northstar-kb___Retrieve"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "{\"retrievalQuery\":{\"text\":\"What is Northstar's hybrid work policy? One sentence.\"}}"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockStop": {
+    "contentBlockIndex": 0
+   }
+  },
+  {
+   "messageStop": {
+    "stopReason": "tool_use"
+   }
+  },
+  {
+   "metadata": {
+    "usage": {
+     "inputTokens": 1426,
+     "outputTokens": 45,
+     "totalTokens": 1471
+    },
+    "metrics": {
+     "latencyMs": 1422
+    }
+   }
+  },
+  {
+   "messageStart": {
+    "role": "user"
+   }
+  },
+  {
+   "contentBlockStart": {
+    "contentBlockIndex": 0,
+    "start": {
+     "toolResult": {
+      "toolUseId": "tooluse_raOeQwSV7XiAQ1WYsHNfKS",
+      "status": "success"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "{\"retrievalResults\":[{\"content\":{\"text\":\"Workplace Guidelines Work Schedule Standard Hours: Monday through Friday, 9:00 AM - 6:00 PM local time Core Hours: 10:00 AM - 3:00 PM (required presence for meetings/collaboration) Flexible Hours: Employees may adjust start/end times with manager approval Hybrid Work Policy Northstar offers a hybrid work arrangement for eligible positions: Employees may work remotely up to 3 days per week Minimum 2 days per week in-office (typically Tuesday-Thursday) Remote work days should be coordinated with team/manager Fully remote positions available for certain roles (as specified in job description) Remote Work Requirements Reliable high-speed internet connection Dedicated, quiet workspace Availability during core hours via Slack/email Attendance at scheduled video meetings with camera on Compliance with information security policies Dress Code Northstar maintains a business casual dress code. When meeting with customers or external partners, business professional attire may be "
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "required. Team-specific guidelines may apply. 4. Compensation & Benefits Pay Schedule Employees are paid semi-monthly on the 15th and last day of each month. If a pay date falls on a weekend or holiday, payment will be processed on the preceding business day. Health Benefits Medical Insurance Choice of PPO or HDHP plans through Aetna. Company covers 90% of employee premium and 70% of dependent premiums. Dental & Vision Dental coverage through Delta Dental. Vision coverage through VSP. Company covers 100% of employee premium.\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/html/company_policies_handbook.html\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"HTML\",\"_document_title\":\"company_policies_handbook.html\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.ht"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "ml\",\"_chunk_id\":\"hutWVpwo2QfLmSYLc4eJqKNqLK2WSG_gyIW0tB8Aww4\",\"_data_source_type\":\"S3\",\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:45Z\",\"_last_updated_at\":\"2026-10-18T12:57:45Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.9548287987709045},{\"content\":{\"text\":\"Northstar Technologies Employee Handbook Effective Date: January 1, 2023 | Version: 3.2 Table of Contents Welcome to Northstar Employment Policies Workplace Guidelines Compensation & Benefits Time Off & Leave Code of Conduct Information Security Resources & Contacts 1. Welcome to Northstar Our Mission At Northstar Technologies, our mission is to empower businesses with intelligent data solutions that drive growth and innovation. We believe in making complex data accessible and actionable for organizations of all sizes. Our Values Customer Obsession: We put our customers at the center of everything we do Innovation: We continuously push boundaries and embrace new ideas Integrity: We act with honesty and transparency in all interactions Collaborati"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "on: We achieve more together than we could alone Excellence: We strive for the highest quality in our work Company Overview Founded in 2019, Northstar Technologies is a mid-size SaaS company headquartered in Seattle, Washington, with additional offices in Austin, Texas and New York City. We serve over 500 customers across industries including healthcare, finance, retail, and manufacturing. Our Locations: Seattle (HQ): 1234 Tech Avenue, Suite 500, Seattle, WA 98101 Austin: 567 Innovation Drive, Austin, TX 78701 New York: 890 Park Avenue, 15th Floor, New York, NY 10022 2. Employment Policies Employment Classification\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/html/company_policies_handbook.html\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"HTML\",\"_document_title\":\"company_policies_handbook.html\",\"_source_uri\":\"https://northstar-"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\",\"_chunk_id\":\"GBDQUlsJPao2d6g_nkxy7oNxfgSGtKSDpWHOMN9_h-Y\",\"_data_source_type\":\"S3\",\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:45Z\",\"_last_updated_at\":\"2026-10-18T12:57:45Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.9318796396255493},{\"content\":{\"text\":\"Additional Benefits\\nBasic life insurance equal to 1x annual salary (up to $250,000). Short-term and long-term disability coverage provided at no cost. Retirement Benefits 401(k) Plan Northstar offers a 401(k) plan with company match. We match 100% of contributions up to 4% of salary. Immediate vesting on all contributions. Additional Benefits\\nBenefit\\tDescription\\nProfessional Development\\t$2,000/year for conferences, courses, certifications\\nHome Office Stipend\\t$500 one-time setup + $50/month ongoing\\nCell Phone Reimbursement\\t$75/month\\nCommuter Benefits\\tPre-tax transit and parking benefits\\nEmployee Referral Bonus\\t$2,500 for successful referrals\\nW"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "ellness Program\\t$100/month gym or fitness reimbursement\\nMental Health\\tFree access to Headspace app + EAP services\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/html/company_policies_handbook.html\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"HTML\",\"_document_title\":\"company_policies_handbook.html\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\",\"_table_sequence_number\":\"1\",\"_chunk_id\":\"qdizAQ_oWEU8PNfVgCzRI3s9sD4DJ6fe-2PuSb74x1g\",\"_data_source_type\":\"S3\",\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:45Z\",\"_last_updated_at\":\"2026-10-18T12:57:45Z\",\"_data_source_id\":\"QAULFCYEWN\",\"_table_section_title\":\"Additional Benefits\",\"_table_id\":\"Op_ELy-yZGoLdAClBpWqbsbaKQureHn8RMXVQVWjifM\"},\"score\":0.924872636795044},{\"content\":{\"text\":\"Equity Compensa"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "tion Eligible employees may receive stock option grants as part of their total compensation package. Grants are subject to a 4-year vesting schedule with a 1-year cliff. Details are provided in individual grant agreements. 5. Time Off & Leave Paid Time Off (PTO) Northstar offers a flexible PTO policy. Full-time employees receive: Years 0-2: 15 days PTO per year Years 3-5: 20 days PTO per year Years 6+: 25 days PTO per year PTO accrues monthly and may be carried over up to 5 days into the following year. Unused PTO beyond the carryover limit will be forfeited. Holidays Northstar observes the following paid holidays: New Year's Day Martin Luther King Jr. Day Presidents' Day Memorial Day Independence Day Labor Day Thanksgiving Day Day after Thanksgiving Christmas Eve Christmas Day 2 Floating Holidays (employee choice) Sick Leave Employees accrue 1 hour of sick leave for every 30 hours worked, up to a maximum of 80 hours per year. Sick leave may be used for personal illness, medical appointments, or caring for a "
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "sick family member. Parental Leave Birth/Adoption Leave: 16 weeks paid leave for primary caregivers, 8 weeks paid leave for secondary caregivers. Leave must be taken within 12 months of birth/adoption.\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/html/company_policies_handbook.html\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"HTML\",\"_document_title\":\"company_policies_handbook.html\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\",\"_chunk_id\":\"G-G_qxT9B-wubxi3dFO7XBNz48HtoOQsxzQrU9V8HlU\",\"_data_source_type\":\"S3\",\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:45Z\",\"_last_updated_at\":\"2026-10-18T12:57:45Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.9086788892745972},{\"content\":{\"text\":\"Northstar Technologies Information Security Policy Document I"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "D: SEC-POL-001 Version: 2.3 Effective Date: January 15, 2023 Last Review: June 1, 2023 Owner: Ryan Hall, Security Engineer Classification: Internal Use Only 1. Purpose This Information Security Policy establishes the framework for protecting Northstar Technologies' information assets, including customer data, intellectual property, and business-critical systems. All employees, contractors, and third parties with access to company systems must comply with this policy. 2. Scope This policy applies to: All employees (full-time, part-time, temporary) Contractors and consultants Third-party vendors with system access All information systems, applications, and data owned or managed by Northstar Technologies 3. Information Classification 3.1 Classification Levels\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/docx/security_policy.docx\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/docx/security_policy.docx\"},\"type"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "\":\"S3\"},\"metadata\":{\"_file_type\":\"MS_WORD\",\"_document_title\":\"security_policy.docx\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/docx/security_policy.docx\",\"_chunk_id\":\"gDtNraMqIy2NSwvzDMHuug_Nw13UKZLIRVW65qfgaBg\",\"_data_source_type\":\"S3\",\"_excerpt_page_number\":1.0,\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:48Z\",\"_last_updated_at\":\"2026-10-18T12:57:48Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.9025837182998657}]}"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockStop": {
+    "contentBlockIndex": 0
+   }
+  },
+  {
+   "messageStop": {
+    "stopReason": "tool_result"
+   }
+  },
+  {
+   "messageStart": {
+    "role": "assistant"
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": "North"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": "star Technologies offers"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " a hybrid work arrangement"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " where"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " eligible"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " employees can work remotely up"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " to 3 days per"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " week with"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " a minimum requirement"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " of "
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": "2 days per"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " week in-office ("
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": "typically Tuesday-Thursday),"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " and fully"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " remote positions are available for certain"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " roles as"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " specified in the"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " job description."
+    }
+   }
+  },
+  {
+   "contentBlockStop": {
+    "contentBlockIndex": 0
+   }
+  },
+  {
+   "messageStop": {
+    "stopReason": "end_turn"
+   }
+  },
+  {
+   "metadata": {
+    "usage": {
+     "inputTokens": 3875,
+     "outputTokens": 58,
+     "totalTokens": 3933
+    },
+    "metrics": {
+     "latencyMs": 1806
+    }
+   }
+  }
+ ],
+ "request_id": "07dd7bb7-251c-4c98-8821-2121ea658ed5",
+ "answer": "Northstar Technologies offers a hybrid work arrangement where eligible employees can work remotely up to 3 days per week with a minimum requirement of 2 days per week in-office (typically Tuesday-Thursday), and fully remote positions are available for certain roles as specified in the job description.",
+ "stop_reason": "end_turn",
+ "tool_calls": [
+  "northstar-kb___Retrieve"
+ ],
+ "seconds": 6.03
+}
