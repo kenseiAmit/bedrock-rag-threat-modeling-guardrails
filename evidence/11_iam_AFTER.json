@@ -1,0 +1,137 @@
+{
+ "NorthstarHarnessExecutionRole": {
+  "HarnessScopedPolicy": {
+   "Version": "2012-10-17",
+   "Statement": [
+    {
+     "Sid": "InvokeApprovedModelOnly",
+     "Effect": "Allow",
+     "Action": [
+      "bedrock:InvokeModel",
+      "bedrock:InvokeModelWithResponseStream"
+     ],
+     "Resource": [
+      "arn:aws:bedrock:us-east-1:269629487409:inference-profile/us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "arn:aws:bedrock:us-east-2::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0"
+     ]
+    },
+    {
+     "Sid": "RequireNorthstarGuardrail",
+     "Effect": "Deny",
+     "Action": [
+      "bedrock:InvokeModel",
+      "bedrock:InvokeModelWithResponseStream"
+     ],
+     "Resource": "*",
+     "Condition": {
+      "ArnNotLike": {
+       "bedrock:GuardrailIdentifier": [
+        "arn:aws:bedrock:us-east-1:269629487409:guardrail/cbrljxvgh2rc",
+        "arn:aws:bedrock:us-east-1:269629487409:guardrail/cbrljxvgh2rc:*"
+       ]
+      }
+     }
+    },
+    {
+     "Sid": "InvokeNorthstarGateway",
+     "Effect": "Allow",
+     "Action": "bedrock-agentcore:InvokeGateway",
+     "Resource": "arn:aws:bedrock-agentcore:us-east-1:269629487409:gateway/northstar-assist-gateway-0x39hcbuob"
+    },
+    {
+     "Sid": "RuntimeLogs",
+     "Effect": "Allow",
+     "Action": [
+      "logs:CreateLogGroup",
+      "logs:DescribeLogStreams",
+      "logs:CreateLogStream",
+      "logs:PutLogEvents"
+     ],
+     "Resource": [
+      "arn:aws:logs:us-east-1:269629487409:log-group:/aws/bedrock-agentcore/runtimes/harness_NorthstarAssist-88mkHp4jsF-*",
+      "arn:aws:logs:us-east-1:269629487409:log-group:/aws/bedrock-agentcore/runtimes/harness_NorthstarAssist-88mkHp4jsF-*:log-stream:*"
+     ]
+    },
+    {
+     "Sid": "RuntimeImageAndTelemetry",
+     "Effect": "Allow",
+     "Action": [
+      "ecr-public:GetAuthorizationToken",
+      "sts:GetServiceBearerToken",
+      "xray:PutTraceSegments",
+      "xray:PutTelemetryRecords"
+     ],
+     "Resource": "*"
+    },
+    {
+     "Sid": "RuntimeManagedImage",
+     "Effect": "Allow",
+     "Action": "ecr:GetAuthorizationToken",
+     "Resource": "*"
+    },
+    {
+     "Sid": "RuntimeManagedImagePull",
+     "Effect": "Allow",
+     "Action": [
+      "ecr:BatchGetImage",
+      "ecr:GetDownloadUrlForLayer",
+      "ecr:BatchCheckLayerAvailability"
+     ],
+     "Resource": "arn:aws:ecr:us-east-1:*:repository/harness-*"
+    },
+    {
+     "Sid": "WorkloadIdentity",
+     "Effect": "Allow",
+     "Action": [
+      "bedrock-agentcore:GetWorkloadAccessToken",
+      "bedrock-agentcore:GetWorkloadAccessTokenForJWT"
+     ],
+     "Resource": [
+      "arn:aws:bedrock-agentcore:us-east-1:269629487409:workload-identity-directory/default",
+      "arn:aws:bedrock-agentcore:us-east-1:269629487409:workload-identity-directory/default/workload-identity/harness_NorthstarAssist-*"
+     ]
+    }
+   ]
+  },
+  "NorthstarAssistApplyGuardrail": {
+   "Version": "2012-10-17",
+   "Statement": [
+    {
+     "Effect": "Allow",
+     "Action": "bedrock:ApplyGuardrail",
+     "Resource": "arn:aws:bedrock:us-east-1:269629487409:guardrail/cbrljxvgh2rc"
+    }
+   ]
+  }
+ },
+ "NorthstarGatewayServiceRole": {
+  "GatewayScopedPolicy": {
+   "Version": "2012-10-17",
+   "Statement": [
+    {
+     "Sid": "ReadOwnGateway",
+     "Effect": "Allow",
+     "Action": "bedrock-agentcore:GetGateway",
+     "Resource": "arn:aws:bedrock-agentcore:us-east-1:269629487409:gateway/northstar-assist-gateway-0x39hcbuob"
+    },
+    {
+     "Sid": "ReadConfigBundle",
+     "Effect": "Allow",
+     "Action": "bedrock-agentcore:GetConfigurationBundleVersion",
+     "Resource": "arn:aws:bedrock-agentcore:us-east-1:269629487409:configuration-bundle/*"
+    },
+    {
+     "Sid": "RetrieveFromNorthstarKbOnly",
+     "Effect": "Allow",
+     "Action": [
+      "bedrock:GetKnowledgeBase",
+      "bedrock:Retrieve"
+     ],
+     "Resource": "arn:aws:bedrock:us-east-1:269629487409:knowledge-base/U89FCYIR8I"
+    }
+   ]
+  }
+ }
+}
