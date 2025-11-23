@@ -1,0 +1,417 @@
+{
+ "label": "15_allowedtools_probe",
+ "prompt": "What is Northstar's hybrid work policy? One sentence.",
+ "session_id": "northstar-1244c94c3a8341b7bed1a017d8b7568d",
+ "timestamp_utc": "2026-10-18T13:23:05.818225+00:00",
+ "events": [
+  {
+   "messageStart": {
+    "role": "assistant"
+   }
+  },
+  {
+   "contentBlockStart": {
+    "contentBlockIndex": 0,
+    "start": {
+     "toolUse": {
+      "toolUseId": "tooluse_qYcdFitseVEHjXdqZ4U8rE",
+      "name": "northstar-kb___Retrieve",
+      "type": "tool_use"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": ""
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "{\""
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "re"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "trievalQue"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "ry\": {\"te"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "xt"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "\":\"h"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "ybrid work p"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolUse": {
+      "input": "olicy\"}}"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockStop": {
+    "contentBlockIndex": 0
+   }
+  },
+  {
+   "messageStop": {
+    "stopReason": "tool_use"
+   }
+  },
+  {
+   "metadata": {
+    "usage": {
+     "inputTokens": 756,
+     "outputTokens": 66,
+     "totalTokens": 822
+    },
+    "metrics": {
+     "latencyMs": 2798
+    }
+   }
+  },
+  {
+   "messageStart": {
+    "role": "user"
+   }
+  },
+  {
+   "contentBlockStart": {
+    "contentBlockIndex": 0,
+    "start": {
+     "toolResult": {
+      "toolUseId": "tooluse_qYcdFitseVEHjXdqZ4U8rE",
+      "status": "success"
+     }
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "{\"retrievalResults\":[{\"content\":{\"text\":\"Workplace Guidelines Work Schedule Standard Hours: Monday through Friday, 9:00 AM - 6:00 PM local time Core Hours: 10:00 AM - 3:00 PM (required presence for meetings/collaboration) Flexible Hours: Employees may adjust start/end times with manager approval Hybrid Work Policy Northstar offers a hybrid work arrangement for eligible positions: Employees may work remotely up to 3 days per week Minimum 2 days per week in-office (typically Tuesday-Thursday) Remote work days should be coordinated with team/manager Fully remote positions available for certain roles (as specified in job description) Remote Work Requirements Reliable high-speed internet connection Dedicated, quiet workspace Availability during core hours via Slack/email Attendance at scheduled video meetings with camera on Compliance with information security policies Dress Code Northstar maintains a business casual dress code. When meeting with customers or external partners, business professional attire may be "
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "required. Team-specific guidelines may apply. 4. Compensation & Benefits Pay Schedule Employees are paid semi-monthly on the 15th and last day of each month. If a pay date falls on a weekend or holiday, payment will be processed on the preceding business day. Health Benefits Medical Insurance Choice of PPO or HDHP plans through Aetna. Company covers 90% of employee premium and 70% of dependent premiums. Dental & Vision Dental coverage through Delta Dental. Vision coverage through VSP. Company covers 100% of employee premium.\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/html/company_policies_handbook.html\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"HTML\",\"_document_title\":\"company_policies_handbook.html\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.ht"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "ml\",\"_chunk_id\":\"hutWVpwo2QfLmSYLc4eJqKNqLK2WSG_gyIW0tB8Aww4\",\"_data_source_type\":\"S3\",\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:45Z\",\"_last_updated_at\":\"2026-10-18T12:57:45Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.9458798170089722},{\"content\":{\"text\":\"13. Policy Review\\nAnnually (minimum) After significant security incidents When regulatory requirements change When business operations significantly change Document History\\nVersion\\tDate\\tAuthor\\tChanges\\n1.0\\t2020-01-01\\tRyan Hall\\tInitial policy\\n2.0\\t2022-01-15\\tRyan Hall\\tAdded HIPAA requirements\\n2.1\\t2022-06-01\\tRyan Hall\\tUpdated encryption standards\\n2.2\\t2022-12-01\\tRyan Hall\\tAdded remote work guidelines\\n2.3\\t2023-01-15\\tRyan Hall\\tAnnual review\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/docx/security_policy.docx\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/docx/security_policy.docx\"},\"type\":\"S3\"},\"metadata\":{\"_source_uri\":\"h"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "ttps://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/docx/security_policy.docx\",\"_chunk_id\":\"qUkL_9IM-MliLyGt9yu8m0dX1FvnoarpaSG0TbjjJGI\",\"_data_source_type\":\"S3\",\"_excerpt_page_number\":6.0,\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:48Z\",\"_data_source_id\":\"QAULFCYEWN\",\"_table_id\":\"oqmk0BeeGh47M5wuBe7CoxvISgqT0VTul4Mf_rhInSE\",\"_file_type\":\"MS_WORD\",\"_document_title\":\"security_policy.docx\",\"_table_sequence_number\":\"5\",\"_last_updated_at\":\"2026-10-18T12:57:48Z\",\"_table_section_title\":\"13. Policy Review\"},\"score\":0.9394825100898743},{\"content\":{\"text\":\"This includes but is not limited to harassment based on race, gender, religion, sexual orientation, disability, or any other protected characteristic. Reporting: Incidents should be reported to your manager, HR, or via our anonymous ethics hotline: 1-800-555-ETHICS Social Media Policy Do not share confidential company information on social media Clearly identify personal opinions as your own, not company views Do not disparage the c"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "ompany, colleagues, customers, or competitors Report any concerns about company-related social media activity to Marketing Substance Policy The use, possession, or distribution of illegal drugs on company premises or during work hours is strictly prohibited. Alcohol may be consumed responsibly at company-sponsored events. Employees should not report to work impaired. 7. Information Security Data Protection All employees are responsible for protecting company and customer data. This includes: Using strong, unique passwords for all accounts Enabling two-factor authentication where available Not sharing credentials with others Locking computers when away from desk Reporting suspected security incidents immediately Acceptable Use of Technology Company-provided equipment and systems should be used primarily for business purposes. Limited personal use is acceptable provided it: Does not interfere with work responsibilities Does not violate company policies or law Does not consume excessive bandwidth or storage Does"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": " not expose the company to security risks Confidential Information Employees may have access to confidential information including customer data, financial records, product plans, and trade secrets.\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/html/company_policies_handbook.html\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"HTML\",\"_document_title\":\"company_policies_handbook.html\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\",\"_chunk_id\":\"bsQwcvuzoj5H-SBAyuTo_bde8dKs-hSL13gZ4jtIFRM\",\"_data_source_type\":\"S3\",\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:45Z\",\"_last_updated_at\":\"2026-10-18T12:57:45Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.9284759163856506},{\"content\":{\"text\":\"12.2 Security Communications Monthly security newsletter Alerts "
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "for emerging threats Lessons learned from incidents (anonymized) 13. Policy Review This policy is reviewed and updated: Annually (minimum) After significant security incidents When regulatory requirements change When business operations significantly change Document History\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/docx/security_policy.docx\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/docx/security_policy.docx\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"MS_WORD\",\"_document_title\":\"security_policy.docx\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/docx/security_policy.docx\",\"_chunk_id\":\"3144zWTflPuiVqasPwviOw5uP2PChIu0hHCZ7s9Ohhc\",\"_data_source_type\":\"S3\",\"_excerpt_page_number\":6.0,\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:48Z\",\"_last_updated_at\":\"2026-10-18T12:57:48Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.8888832926750183},{\"content\":{\"text\""
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": ":\"Limited personal use is acceptable provided it: Does not interfere with work responsibilities Does not violate company policies or law Does not consume excessive bandwidth or storage Does not expose the company to security risks Confidential Information Employees may have access to confidential information including customer data, financial records, product plans, and trade secrets. This information must: Only be accessed on a need-to-know basis Never be shared outside the company without authorization Be properly secured at all times Be returned to the company upon termination Security Training All employees must complete annual security awareness training. Additional role-specific training may be required. Training records are maintained by IT Security. 8. Resources & Contacts Key Contacts\",\"type\":\"TEXT\"},\"documentId\":\"s3://northstar-assist-kb-am6656/northstar-knowledge-base/html/company_policies_handbook.html\",\"location\":{\"s3Location\":{\"uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "toolResult": [
+      {
+       "text": "knowledge-base/html/company_policies_handbook.html\"},\"type\":\"S3\"},\"metadata\":{\"_file_type\":\"HTML\",\"_document_title\":\"company_policies_handbook.html\",\"_source_uri\":\"https://northstar-assist-kb-am6656.s3.amazonaws.com/northstar-knowledge-base/html/company_policies_handbook.html\",\"_chunk_id\":\"HUfgAqpPE882hnUccms9jkahAbZjMWoe4XJdiaJjErw\",\"_data_source_type\":\"S3\",\"_language_code\":\"en\",\"_created_at\":\"2026-10-18T12:57:45Z\",\"_last_updated_at\":\"2026-10-18T12:57:45Z\",\"_data_source_id\":\"QAULFCYEWN\"},\"score\":0.8861751556396484}]}"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "contentBlockStop": {
+    "contentBlockIndex": 0
+   }
+  },
+  {
+   "messageStop": {
+    "stopReason": "tool_result"
+   }
+  },
+  {
+   "messageStart": {
+    "role": "assistant"
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": "Based"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " on the company"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " policies handbook"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": ","
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " Northstar's"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " hybrid work policy allows"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " eligible"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " employees"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " to work remotely up to 3"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " days per week with"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " a"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " minimum of"
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": " 2 days in-office ("
+    }
+   }
+  },
+  {
+   "contentBlockDelta": {
+    "contentBlockIndex": 0,
+    "delta": {
+     "text": "typically Tuesday-Thursday)."
+    }
+   }
+  },
+  {
+   "contentBlockStop": {
+    "contentBlockIndex": 0
+   }
+  },
+  {
+   "messageStop": {
+    "stopReason": "end_turn"
+   }
+  },
+  {
+   "metadata": {
+    "usage": {
+     "inputTokens": 3369,
+     "outputTokens": 49,
+     "totalTokens": 3418
+    },
+    "metrics": {
+     "latencyMs": 3403
+    }
+   }
+  }
+ ],
+ "request_id": "6f585aeb-6dc7-4f23-9ee5-3bb2b41debdc",
+ "answer": "Based on the company policies handbook, Northstar's hybrid work policy allows eligible employees to work remotely up to 3 days per week with a minimum of 2 days in-office (typically Tuesday-Thursday).",
+ "stop_reason": "end_turn",
+ "tool_calls": [
+  "northstar-kb___Retrieve"
+ ],
+ "seconds": 40.87
+}
