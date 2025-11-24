@@ -1,0 +1,20 @@
+{
+ "kb_id": "U89FCYIR8I",
+ "ds_id": "QAULFCYEWN",
+ "kb_role_arn": "arn:aws:iam::269629487409:role/NorthstarAssistKBServiceRole",
+ "bucket": "northstar-assist-kb-am6656",
+ "gateway_id": "northstar-assist-gateway-0x39hcbuob",
+ "gateway_arn": "arn:aws:bedrock-agentcore:us-east-1:269629487409:gateway/northstar-assist-gateway-0x39hcbuob",
+ "gateway_role": "arn:aws:iam::269629487409:role/NorthstarGatewayServiceRole",
+ "target_id": "3ESMLF0W4X",
+ "harness_id": "NorthstarAssist-PhZCito2Sx",
+ "harness_arn": "arn:aws:bedrock-agentcore:us-east-1:269629487409:harness/NorthstarAssist-PhZCito2Sx",
+ "harness_role": "arn:aws:iam::269629487409:role/NorthstarHarnessExecutionRole",
+ "harness_role_name": "NorthstarHarnessExecutionRole",
+ "gateway_role_name": "NorthstarGatewayServiceRole",
+ "guardrail_id": "cbrljxvgh2rc",
+ "guardrail_arn": "arn:aws:bedrock:us-east-1:269629487409:guardrail/cbrljxvgh2rc",
+ "guardrail_version": "1",
+ "log_group": "/northstar-assist/bedrock-invocations",
+ "logging_role": "NorthstarBedrockLoggingRole"
+}

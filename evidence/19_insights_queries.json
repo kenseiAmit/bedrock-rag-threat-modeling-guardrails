@@ -1,0 +1,384 @@
+{
+ "q1_guardrail_interventions_by_hour": {
+  "query": "filter output.outputBodyJson.stopReason = \"guardrail_intervened\" | stats count() as interventions by bin(1h)",
+  "status": "Complete",
+  "rows": [
+   {
+    "bin(1h)": "2026-10-18 13:00:00.000",
+    "interventions": "40"
+   }
+  ]
+ },
+ "q2_blocked_policy_detail": {
+  "query": "filter output.outputBodyJson.stopReason = \"guardrail_intervened\" | parse @message /\"filters\":\\[\\{\"type\":\"(?<attack>[A-Z_]+)\"/ | stats count() by attack",
+  "status": "Complete",
+  "rows": [
+   {
+    "attack": "PROMPT_ATTACK",
+    "count()": "8"
+   },
+   {
+    "count()": "26"
+   },
+   {
+    "attack": "MISCONDUCT",
+    "count()": "6"
+   }
+  ]
+ },
+ "q3_token_anomaly_top": {
+  "query": "filter output.outputBodyJson.usage.totalTokens > 8000 | fields @timestamp, requestId, output.outputBodyJson.usage.totalTokens as tokens | sort tokens desc | limit 10",
+  "status": "Complete",
+  "rows": [
+   {
+    "@timestamp": "2026-10-18 13:18:07.000",
+    "requestId": "9c310267-6015-439b-be4f-36816f9793d5",
+    "tokens": "11434",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqNb20gAAAABbkYBvAAatTG3wAAAAIiABKJilpvmUNDCYpab5lDQ4AUDaowJI1N0BUKmrARAAGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:17:42.000",
+    "requestId": "123bc8c1-09c5-475e-9fc5-a9d28ab0f5ae",
+    "tokens": "11305",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGrHSXYwAAAACa4m8qAAatTG9wAAAHMiABKPDhpPmUNDDY4Kf5lDQ4BkCExwNIsYUDUIWHAhAAGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:27:09.000",
+    "requestId": "90b33ab7-03ff-47e2-8e73-0c4384df34d9",
+    "tokens": "11187",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqNb20gAAAABblDH4AAatTJEgAAAAIiABKKiWxfmUNDDAhcj5lDQ4BEDh/QVIv9kCUJ2EAhACGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:26:33.000",
+    "requestId": "1d6a6a22-f8e9-46a5-858d-618dceca4acd",
+    "tokens": "11183",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqNb20gAAAABblDH4AAatTJEgAAAAIiABKKiWxfmUNDDAhcj5lDQ4BEDh/QVIv9kCUJ2EAhAAGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:16:40.000",
+    "requestId": "b9dd23b3-72d3-4237-8f01-e14064731d3e",
+    "tokens": "9003",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqNb20gAAAABbkPm3AAatTGcAAAAAIiABKMD9oPmUNDCogqL5lDQ4A0C8sQNIpNwBUPOXARAAGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:16:57.000",
+    "requestId": "539b9979-2bcf-42b2-b781-dbfbe7437f11",
+    "tokens": "9001",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqNb20gAAAABbkPm3AAatTGcAAAAAIiABKMD9oPmUNDCogqL5lDQ4A0C8sQNIpNwBUPOXARACGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:17:14.000",
+    "requestId": "46d89fee-14b8-41cf-9a4b-c57aeea19638",
+    "tokens": "8969",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqtaQGwAAAABksM+TAAatTGdAAAAGsiABKKiIoPmUNDDQxaP5lDQ4BUDfzwJImLQCUIm7ARAEGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:18:23.000",
+    "requestId": "b03f2623-d274-46b5-93a9-3db980598523",
+    "tokens": "8716",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqQRgLAAAAABLyEnzAAatTGzAAAABwiABKNDCpPmUNDDorqj5lDQ4B0CX1gZIufUCUMCDAhADGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:26:05.000",
+    "requestId": "71b0fa37-581b-4f99-b4a3-2949b37d5b0c",
+    "tokens": "8605",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqNb20gAAAABbk6qQAAatTIpAAAAAIiABKLDGwvmUNDCg78T5lDQ4A0DgkQNIpZ8CUJfVARABGAE="
+   },
+   {
+    "@timestamp": "2026-10-18 13:25:37.000",
+    "requestId": "3953ba22-3679-486f-9045-31d7a1f77ce8",
+    "tokens": "8560",
+    "@ptr": "CrgBCnwKMjI2OTYyOTQ4NzQwOTovbm9ydGhzdGFyLWFzc2lzdC9iZWRyb2NrLWludm9jYXRpb25zEAAaJGRiNWQ3YjNiLWM5NWEtNDhiMi05Mzc3LWNhZDhmODlmMjUwMiIOCJX/lvmUNBCP7fv6lDQ4sfCbpYs0QJX/lvmUNEgAEjgaGAIGqM+4dAAAAACErmD5AAatTIuQAAADQiABKJjRwfmUNDDYgMf5lDQ4B0D/7QNIt6ACUOvEARABGAE="
+   }
+  ]
+ },
+ "q4_calls_by_identity_model": {
+  "query": "stats count() as calls, sum(output.outputBodyJson.usage.totalTokens) as tokens by identity.arn, modelId",
+  "status": "Complete",
+  "rows": [
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-f1aa2566-8e02-496a-b747-c057b9e4e32d",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-69347163-7e25-4cea-bac2-f01df51d9b77",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "4355"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarAssistKBServiceRole/FMKB-Embed-269629487409",
+    "modelId": "arn:aws:bedrock:us-east-1::foundation-model/amazon.titan-embed-text-v2:0",
+    "calls": "35"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-e87d82ff-409f-49d3-8d3d-2349858dfb65",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-735a53b9-5ebc-412b-ab5e-5a47d73481c8",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-d43ebb7a-d8a3-40d0-9610-a85d737bbc6e",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-4c88f5d2-3d86-46e1-81cc-734b543ffedb",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-df7e0b5c-fe4a-4c5d-8b03-1054efda5311",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-10ec21c0-891f-488c-90f0-8c8869b7a086",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-10d17c80-69b6-4c18-a7a8-2a6a0852c52c",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "4",
+    "tokens": "23882"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-9692d7e5-a825-4150-9f55-c150712209d0",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "3",
+    "tokens": "13157"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-d7ec972d-61f1-447a-a7c5-10bb7b879b5f",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "4",
+    "tokens": "23884"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-e74f4666-d2fb-4b30-a3a9-19ca3aa1431a",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-a6fc7da8-8688-46b4-bf37-3f643f7f1eef",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-61235827-d622-46c8-9fac-5f1c1ca45cd0",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-00be78df-5b6a-4eeb-a09a-2ab8f1407c7a",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "9522"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-5819dad0-29f4-44bf-a915-07711d556dc0",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "9445"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-39a02fc4-7e53-48bf-acdd-3a2bf9fa9aff",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "9477"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-fb987182-0b7b-43f9-84dc-592bde24cc8b",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-72200beb-5d56-43ba-a7d1-827311f5f37f",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-ccd14227-b446-4831-bf40-205d57a0dbe5",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-1e2e0a6e-2b27-42ab-abfa-7a5c3bb912cf",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "5337"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-38861a03-52b2-45e0-bd97-94e5cb782ec6",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "4240"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-ab82a690-380c-4d3e-9b10-1f65469ebc44",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "6015"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-17e40ade-e431-448e-a905-2ef7130d095d",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "5068"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-a214e67f-1f75-4768-9463-1bddc868dc71",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-d9c1c5e8-556f-4594-b29f-9c4bd696b9a5",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-d94e3491-01b4-4288-aa9b-2c9dcf4de5f2",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-f7571ee7-47b3-4248-bcaa-4e9f7a9eda32",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-5d863c3c-b9fa-4854-a3f2-cbcba5e41ffa",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-6fb42a4c-3349-44ca-bf03-e7680137dc5b",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-4a2a7cb8-ed7b-4a5d-97e4-1e42c48ce20b",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "3",
+    "tokens": "14420"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-7e1e3f29-51a9-4609-91ad-7478c5665155",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "4",
+    "tokens": "25001"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-925becce-0cd5-4627-98bb-0a8efc5903c1",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "4",
+    "tokens": "24937"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-f18c8f11-2f6a-4702-9a90-6307ef285a9d",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-d51662e6-9de5-49b9-9be0-68eadee87ff5",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-7504b855-1348-46d1-b69e-f5f6a87e8989",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-48bfb275-18e7-4fc4-80c3-7aeded92ca7f",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "10295"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-60091adf-23f8-48c5-87ec-6bf4662cb6bd",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "10327"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-1c4b4abd-57d7-4c30-8b87-366b0349e8c0",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "10329"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-8293f080-0b3d-40fd-992f-ff19b95befc2",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-bd99c6f2-401f-4e2b-bc76-3f6996f621d0",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-ef5045f0-bc32-46dd-a431-477d61514672",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-bc33aa32-437e-4554-a1a5-054695c43367",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "1",
+    "tokens": "0"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-22b8fcb6-e6fa-4b3b-bc3c-6e8975d4cad8",
+    "modelId": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    "calls": "2",
+    "tokens": "5181"
+   },
+   {
+    "identity.arn": "arn:aws:sts::269629487409:assumed-role/NorthstarHarnessExecutionRole/BedrockAgentCore-a7e8aeee-3b8d-4bf2-9a19-f0aabbcb1802",
+    "modelId": "us.amazon.nova-2-lite-v1:0",
+    "calls": "2",
+    "tokens": "5404"
+   },
+   {
+    "calls": "1"
+   }
+  ]
+ },
+ "q5_zero_chunk_retrieval": {
+  "query": "filter @message like /\\\"retrievalResults\\\\\\\":\\[\\]/ | stats count() as zero_chunk_results",
+  "status": "Complete",
+  "rows": []
+ }
+}

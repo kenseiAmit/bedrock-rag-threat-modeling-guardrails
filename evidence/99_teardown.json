@@ -1,0 +1,66 @@
+[
+ [
+  "delete harness",
+  "ok"
+ ],
+ [
+  "delete gateway target",
+  "ok"
+ ],
+ [
+  "delete gateway",
+  "ok"
+ ],
+ [
+  "delete data source",
+  "ok"
+ ],
+ [
+  "delete KB",
+  "ok"
+ ],
+ [
+  "delete guardrail",
+  "ok"
+ ],
+ [
+  "empty+delete bucket",
+  "ok"
+ ],
+ [
+  "delete alarm",
+  "ok"
+ ],
+ [
+  "delete metric filter",
+  "ok"
+ ],
+ [
+  "disable invocation logging",
+  "ok"
+ ],
+ [
+  "delete log group",
+  "ok"
+ ],
+ [
+  "delete log group /aws/bedrock-agentcore/runtimes/harness_NorthstarAssist-88mkHp4jsF-DEFAULT",
+  "ok"
+ ],
+ [
+  "delete role NorthstarHarnessExecutionRole",
+  "ok"
+ ],
+ [
+  "delete role NorthstarGatewayServiceRole",
+  "ok"
+ ],
+ [
+  "delete role NorthstarAssistKBServiceRole",
+  "ok"
+ ],
+ [
+  "delete role NorthstarBedrockLoggingRole",
+  "ok"
+ ]
+]

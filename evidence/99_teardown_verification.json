@@ -1,0 +1,13 @@
+{
+ "harness": "gone",
+ "gateway": "gone",
+ "kb": "gone (re-verified 2026-10-18T17:40+02:00: ResourceNotFoundException; list_knowledge_bases empty)",
+ "guardrail": "gone",
+ "bucket": "gone",
+ "NorthstarHarnessExecutionRole": "gone",
+ "NorthstarGatewayServiceRole": "gone",
+ "NorthstarAssistKBServiceRole": "gone",
+ "NorthstarBedrockLoggingRole": "gone",
+ "alarms": 0,
+ "logging_cfg": null
+}
