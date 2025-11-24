@@ -1,0 +1,40 @@
+{
+ "runtime_log_groups": [
+  "/aws/bedrock-agentcore/runtimes/harness_NorthstarAssist-88mkHp4jsF-DEFAULT"
+ ],
+ "runtime_sample_/aws/bedrock-agentcore/runtimes/harness_NorthstarAssist-88mkHp4jsF-DEFAULT": [],
+ "kb_log_groups": [],
+ "metric_GuardrailIntervened": [
+  {
+   "Timestamp": "2026-10-18 14:44:00+02:00",
+   "Sum": 40.0,
+   "Unit": "None"
+  }
+ ],
+ "alarm": [
+  {
+   "AlarmName": "NorthstarAssist-GuardrailInterventions-High",
+   "AlarmArn": "arn:aws:cloudwatch:us-east-1:269629487409:alarm:NorthstarAssist-GuardrailInterventions-High",
+   "AlarmDescription": "More than 5 guardrail interventions in 1 hour - possible prompt-injection campaign. See IR playbook.",
+   "AlarmConfigurationUpdatedTimestamp": "2026-10-18 15:14:09.199000+02:00",
+   "ActionsEnabled": true,
+   "OKActions": [],
+   "AlarmActions": [],
+   "InsufficientDataActions": [],
+   "StateValue": "ALARM",
+   "StateReason": "Threshold Crossed: 1 datapoint [6.0 (18/10/26 12:17:00)] was greater than the threshold (5.0).",
+   "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-10-18T13:17:36.240+0000\",\"startDate\":\"2026-10-18T12:17:00.000+0000\",\"statistic\":\"Sum\",\"period\":3600,\"recentDatapoints\":[6.0],\"threshold\":5.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-10-18T12:17:00.000+0000\",\"sampleCount\":18.0,\"value\":6.0}]}",
+   "StateUpdatedTimestamp": "2026-10-18 15:17:36.243000+02:00",
+   "MetricName": "GuardrailIntervened",
+   "Namespace": "NorthstarAssist",
+   "Statistic": "Sum",
+   "Dimensions": [],
+   "Period": 3600,
+   "EvaluationPeriods": 1,
+   "Threshold": 5.0,
+   "ComparisonOperator": "GreaterThanThreshold",
+   "TreatMissingData": "notBreaching",
+   "StateTransitionedTimestamp": "2026-10-18 15:17:36.243000+02:00"
+  }
+ ]
+}
