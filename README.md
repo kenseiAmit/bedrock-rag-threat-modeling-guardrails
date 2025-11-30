@@ -1,13 +1,13 @@
 <div align="center">
-  <img src="assets/hero-banner.svg" alt="AWS Bedrock RAG Security & Guardrails" width="100%" />
+  <img src="assets/hero-banner.svg" alt="AWS Bedrock RAG Security &amp; Guardrails" width="100%" />
   <br/><br/>
-  ![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock%20KB%20%2B%20Guardrails-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-  ![Claude 4.5](https://img.shields.io/badge/Model-Claude%20Sonnet%204.5-2563EB?style=flat-square)
-  ![Red Team](https://img.shields.io/badge/Adversarial%20Eval-36%2F36%20Intercepted%20(100%25)-16A34A?style=flat-square)
-  ![IAM](https://img.shields.io/badge/IAM-Explicit--Deny%20Least%20Privilege-0D9488?style=flat-square)
-  ![License](https://img.shields.io/badge/License-MIT-slate?style=flat-square)
-
-  <br/>
+  <p>
+    <img src="https://img.shields.io/badge/AWS-Bedrock%20KB%20%2B%20Guardrails-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white" alt="AWS Bedrock" />
+    <img src="https://img.shields.io/badge/Model-Claude%20Sonnet%204.5-2563EB?style=flat-square" alt="Claude 4.5" />
+    <img src="https://img.shields.io/badge/Adversarial%20Eval-36%2F36%20Intercepted%20%28100%25%29-16A34A?style=flat-square" alt="Red Team" />
+    <img src="https://img.shields.io/badge/IAM-Explicit--Deny%20Least%20Privilege-0D9488?style=flat-square" alt="IAM" />
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-475569?style=flat-square" alt="License" /></a>
+  </p>
   <img src="assets/live-demo.svg" alt="Live Execution Trace" width="96%" />
 </div>
 
