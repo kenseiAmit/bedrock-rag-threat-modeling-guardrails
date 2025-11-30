@@ -1,10 +1,17 @@
-# Northstar Assist: AWS Bedrock RAG Threat Modeling (STRIDE-ML), IAM Scoping & Guardrail Red-Teaming
+<div align="center">
+  <img src="assets/hero-banner.svg" alt="AWS Bedrock RAG Security & Guardrails" width="100%" />
+  <br/><br/>
+  ![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock%20KB%20%2B%20Guardrails-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+  ![Claude 4.5](https://img.shields.io/badge/Model-Claude%20Sonnet%204.5-2563EB?style=flat-square)
+  ![Red Team](https://img.shields.io/badge/Adversarial%20Eval-36%2F36%20Intercepted%20(100%25)-16A34A?style=flat-square)
+  ![IAM](https://img.shields.io/badge/IAM-Explicit--Deny%20Least%20Privilege-0D9488?style=flat-square)
+  ![License](https://img.shields.io/badge/License-MIT-slate?style=flat-square)
 
-![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock%20KB%20%2B%20Guardrails-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![Claude 4.5](https://img.shields.io/badge/Model-Claude%20Sonnet%204.5-2563EB?style=flat-square)
-![Red Team](https://img.shields.io/badge/Adversarial%20Eval-36%2F36%20Intercepted%20(100%25)-16A34A?style=flat-square)
-![IAM](https://img.shields.io/badge/IAM-Explicit--Deny%20Least%20Privilege-0D9488?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-slate?style=flat-square)
+  <br/>
+  <img src="assets/live-demo.svg" alt="Live Execution Trace" width="96%" />
+</div>
+
+---
 
 End-to-end AI security engineering, **STRIDE-ML threat modeling**, **ML-BOM supply-chain provenance**, **IAM least-privilege lockdown**, **AgentCore Gateway tool scoping**, **CloudWatch anomaly alarming**, and **36-run adversarial guardrail evaluation** for an enterprise Amazon Bedrock Knowledge Base (`Titan Embed Text v2`) + `Claude Sonnet 4.5` RAG assistant.
 
