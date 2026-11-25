@@ -1,6 +1,6 @@
 # Task 6 – Monitoring Plan (Northstar Assist)
 
-Author: Amit Kumar Koshta · Date: 2026-10-18 · System: Northstar Assist (AgentCore harness `NorthstarAssist-PhZCito2Sx` → Gateway → Managed KB `U89FCYIR8I`, guardrail `cbrljxvgh2rc` v1)
+Author: Amit Kumar · Date: 2026-10-18 · System: Northstar Assist (AgentCore harness `NorthstarAssist-PhZCito2Sx` → Gateway → Managed KB `U89FCYIR8I`, guardrail `cbrljxvgh2rc` v1)
 
 What is **actually deployed** vs **recommended** is marked in each row. Deployed items were created by `scripts/08_monitoring.py` and exercised with the real test traffic.
 

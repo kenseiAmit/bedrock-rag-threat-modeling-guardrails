@@ -121,7 +121,7 @@ find("[Provide actionable recommendations").text = (
  "5) Re-run the Task 7 test battery after every prompt, guardrail, model or KB change; add red-team tests for indirect injection. 6) User education: do not paste secrets; report odd answers.")
 for t in d.tables:
     if t.rows[0].cells[0].text == "Role":
-        for r, (n) in enumerate(["Amit Kumar Koshta (author; unreviewed)", "Not assigned", "Not assigned"], start=1):
+        for r, (n) in enumerate(["Amit Kumar (author; unreviewed)", "Not assigned", "Not assigned"], start=1):
             t.rows[r].cells[1].text = n; t.rows[r].cells[2].text = "2026-10-18" if r == 1 else ""
 for p in list(d.paragraphs):
     if p.text.startswith("[Identify") or p.text.startswith("[Describe risks"):

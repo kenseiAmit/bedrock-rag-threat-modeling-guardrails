@@ -1,6 +1,6 @@
 # Task 6 – Incident Response Playbook (Northstar Assist)
 
-Author: Amit Kumar Koshta · Date: 2026-10-18 · Scenario: **sustained prompt-injection / data-extraction attempt** (alarm `NorthstarAssist-GuardrailInterventions-High`: > 5 guardrail interventions per hour). Commands use real resource IDs from this deployment (`us-east-1`).
+Author: Amit Kumar · Date: 2026-10-18 · Scenario: **sustained prompt-injection / data-extraction attempt** (alarm `NorthstarAssist-GuardrailInterventions-High`: > 5 guardrail interventions per hour). Commands use real resource IDs from this deployment (`us-east-1`).
 
 ## 1. Detection signals
 | Signal | Source | Meaning |

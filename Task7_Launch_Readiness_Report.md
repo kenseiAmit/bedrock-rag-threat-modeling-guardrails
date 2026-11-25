@@ -1,6 +1,6 @@
 # Task 7 – Launch-Readiness Report (Northstar Assist)
 
-Author: Amit Kumar Koshta · Date: 2026-10-18
+Author: Amit Kumar · Date: 2026-10-18
 Test harness: `scripts/06_edge_tests.py <phase> <runs>`; raw results `evidence/07_<phase>_*.json`, consoles `12_hardened_console.txt`, `16_final_console.txt`.
 Phases: **baseline** (no guardrail, 1 run), **guardrail** (v1 attached, 1 run), **hardened** (guardrail + scoped IAM, 3 runs × 6 prompts), **final** (plus `allowedTools` restricted to the gateway, `maxIterations 10`, `timeout 300 s`; 3 runs × 6 prompts).
 

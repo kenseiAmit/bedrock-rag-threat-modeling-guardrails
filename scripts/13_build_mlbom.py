@@ -24,7 +24,7 @@ fill(T[0], [("Anthropic Claude Sonnet 4.5 (primary foundation model, via Amazon 
   ("Proprietary: Anthropic commercial terms / AWS Service Terms (weights not distributed)",),
   ("None executed by the customer. Managed service; framework/runtime libraries are not disclosed by the provider. Harness runtime is AWS-managed (AgentCore). Client side: boto3 1.43.114 (Python 3.12) for build/test scripts.",),
   ("https://aws.amazon.com/bedrock/anthropic/ ; Bedrock model ID anthropic.claude-sonnet-4-5-20250929-v1:0",)])
-fill(T[1], [("2026-10-18",), ("Amit Kumar Koshta (AI Security Engineer candidate), with GitHub Copilot assistance",),
+fill(T[1], [("2026-10-18",), ("Amit Kumar (AI Security Engineer candidate), with GitHub Copilot assistance",),
   ("Manual inventory from live AWS API output (get_harness, get_knowledge_base, get_gateway, get_guardrail, IAM get_role_policy); no automated SBOM tool exists for managed Bedrock models",)])
 fill(T[2], [("https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",), ("https://www.anthropic.com/claude/sonnet",), ("Northstar security team (internal)",)])
 d_tags = [p for p in d.paragraphs if p.text.startswith("[Tags or labels")][0]
@@ -100,5 +100,5 @@ P("Trust boundaries: user -> harness (IAM), harness -> model (guardrail + IAM de
 d.paragraphs  # tables for attestation
 for t in d.tables:
     if t.rows[0].cells[0].text == "Role":
-        setc(t, 1, 1, "Amit Kumar Koshta"); setc(t, 1, 2, "2026-10-18"); setc(t, 2, 1, "Not yet reviewed (pending instructor/peer review)"); setc(t, 2, 2, "")
+        setc(t, 1, 1, "Amit Kumar"); setc(t, 1, 2, "2026-10-18"); setc(t, 2, 1, "Not yet reviewed (pending instructor/peer review)"); setc(t, 2, 2, "")
 d.save(OUT); print("saved", OUT)
