@@ -13,6 +13,8 @@
 
 ---
 
+![AWS Bedrock RAG Security — IAM, Guardrails & IR Architecture](docs/images/architecture_blueprint.png)
+
 End-to-end AI security engineering, **STRIDE-ML threat modeling**, **ML-BOM supply-chain provenance**, **IAM least-privilege lockdown**, **AgentCore Gateway tool scoping**, **CloudWatch anomaly alarming**, and **36-run adversarial guardrail evaluation** for an enterprise Amazon Bedrock Knowledge Base (`Titan Embed Text v2`) + `Claude Sonnet 4.5` RAG assistant.
 
 ![Bedrock Guardrails Red-Team Matrix](docs/images/bedrock_guardrails_redteam_matrix.png)
